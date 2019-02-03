@@ -11,7 +11,8 @@
 	#include "jobs/medical.dm"
 	#include "jobs/police.dm"
 	#include "jobs/utilities.dm"
-	#include "cassini-1.dmm"
+	#include "cassini-mine-1.dmm"
+	#include "cassini-basement-1.dmm"
 	#define using_map_DATUM /datum/map/cassini
 #elif !defined(MAP_OVERRIDE)
 	#warn A map has already been included, ignoring Cassini

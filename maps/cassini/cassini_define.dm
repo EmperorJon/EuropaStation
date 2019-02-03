@@ -5,10 +5,15 @@
 	path = "cassini"
 	lobby_icon = 'maps/cassini/cassini_lobby.dmi'
 	lobby_tracks = list()
-	station_levels = list(1)
-	contact_levels = list(1)
-	player_levels = list(1)
+	station_levels = list(1, 2)
+	contact_levels = list(1, 2)
+	player_levels = list(1, 2)
 	allowed_spawns = list("Arrivals Shuttle")
+
+	//Some places in the codebase revert turfs to area base, some to map base, and some to world base :(
+	//By default we'll make dry ocean floor the base floor type to prevent mad flooding by magically appearing water
+	//It's up to areas etc. to override this where it makes sense to do so.
+	base_floor_type = /turf/simulated/ocean/dry
 
 	shuttle_docked_message = "The shuttle has docked."
 	shuttle_leaving_dock = "The shuttle has departed from home dock."
